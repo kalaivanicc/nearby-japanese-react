@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-let key = process.env.REACT_APP_KEY
+let key = process.env.REACT_APP_Z_KEY
 let source = 'https://developers.zomato.com/api/v2.1/';
 
 let nycCuisines = 'cuisines?city_id=280'

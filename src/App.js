@@ -1,18 +1,21 @@
 import React from 'react';
 import './App.css';
-import api from './api.js'
+import yelpApi from './yelpApi.js'
 
 class App extends React.Component {
+  state = {
+    yelpData: {}
+  }
 
-  runAPI = async () => {
-    let data = await api();
+getData = async () => {
+    let data = await yelpApi();
     console.log(data);
     return data
     }
 
 
   componentDidMount = () => {
-    this.runAPI();
+    this.getData();
   }
 
   render() {
