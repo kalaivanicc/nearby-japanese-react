@@ -8,7 +8,7 @@ let source = 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/busine
 //locational
 let lat = '40.74014';
 let lon = '-73.9897728999999';
-let radius = '1000';
+let radius = '500';
 let limit = '50';
 //sorting
 let distance = 'distance';
@@ -21,7 +21,7 @@ let category = 'japanese'
 
 
 const getData = async () => {
-  let response = await axios.get(`${source}?latitude=${lat}&longitude=${lon}&radius=${radius}&limit=${limit}`, {
+  let response = await axios.get(`${source}?latitude=${lat}&longitude=${lon}&radius=${radius}&limit=${limit}&categories=${category}&sort_by=${distance}`, {
     headers:{
       Authorization: `Bearer ${key}`}
     });

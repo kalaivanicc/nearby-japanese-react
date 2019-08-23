@@ -9,7 +9,7 @@ class App extends React.Component {
 
 getData = async () => {
     let data = await yelpApi();
-    console.log(data);
+    console.log(data.data.businesses);
     return data
     }
 
