@@ -1,0 +1,19 @@
+.results {
+  width: 100%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  max-width: 950px;
+  margin: 0 auto;
+}
+.results-output {
+  margin: 0;
+  height: 60%;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

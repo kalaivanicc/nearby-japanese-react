@@ -1,0 +1,10 @@
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  background: green;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

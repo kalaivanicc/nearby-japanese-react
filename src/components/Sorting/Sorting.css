@@ -1,0 +1,15 @@
+.sorting {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  background: turquoise;
+  max-width: 950px;
+  margin: 0 auto;
+}
+.param {
+  border: black solid 1px;
+  width: 100px;
+  margin: 5px;
+}
