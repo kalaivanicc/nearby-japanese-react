@@ -5,12 +5,20 @@ import Results from '../Results/Results'
 import './Main.css'
 
 
-const Main = () => {
-  const [coords, setCoords] = useState([null,null])
+const Main = (props) => {
+  const [lat, setLat] = useState(null)
+  const [lon, setLon] = useState(null)
+
+  const setCoords = async (lat, lon) => {
+    await setLat(lat)
+    await setLon(lon)
+    console.log(lat,lon);
+  }
 
   return (
     <main>
-      <Inputs />
+      <Inputs
+      setCoords={setCoords}/>
       <Sorting />
       <Results />
     </main>
