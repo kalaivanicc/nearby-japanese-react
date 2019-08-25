@@ -13,7 +13,7 @@ const Checkbox = (props) => {
         id={props.value}
         onClick={() => handleClick(props.value)}
         ></input>
-        <label for={props.value}>{props.value}m</label>
+        <label>{props.value}m</label>
       </div>
   );
 }

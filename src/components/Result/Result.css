@@ -1,6 +1,14 @@
 .result {
   border: solid black 2px;
-  width: 250px;
-  Height: 200px;
   margin: 10px;
+  text-align: center;
+
+  width: 100%;
+  height: 250px;
+}
+
+@media(min-width: 450px) {
+  .result {
+    width: 330px;
+  }
 }

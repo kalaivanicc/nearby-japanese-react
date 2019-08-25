@@ -19,7 +19,7 @@ getData = async () => {
   }
 
   componentDidMount = () => {
-    this.getData();
+    // this.getData();
   }
 
   render() {

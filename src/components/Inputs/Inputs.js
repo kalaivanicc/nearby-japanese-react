@@ -5,22 +5,14 @@ import Checkbox from './Checkbox'
 const Inputs = (props) => {
 
   const cbValues = [250,500,1000,3000];
-  const [checkbox, setCheckbox] = useState(cbValues[1])
 
   const handleGeoClick = () => {
     navigator.geolocation.getCurrentPosition((res)=> {props.setCoords(res.coords.latitude,res.coords.longitude)})
   }
 
-  const handleCbClick = (value) => {
+  const handleSelect = (value) => {
     props.setDist(value)
   }
-
-  const checkboxes = cbValues.map((d,i) => {
-    return <Checkbox
-        key={i}
-        value={d}
-        handleCbClick={handleCbClick} />
-  })
 
   return (
     <div className='inputs'>
@@ -28,7 +20,23 @@ const Inputs = (props) => {
       <button
       onClick={handleGeoClick}>
       Set Coordinates</button>
-      {checkboxes}
+      <div className='select-container'>
+        <select>
+          <option>Radius</option>
+          <option
+          onClick={handleSelect(cbValues[0])}>
+          {cbValues[0]}m</option>
+          <option
+          onClick={handleSelect(cbValues[1])}>
+          {cbValues[1]}m</option>
+          <option
+          onClick={handleSelect(cbValues[2])}>
+          {cbValues[2]}m</option>
+          <option
+          onClick={handleSelect(cbValues[3])}>
+          {cbValues[3]}m</option>
+        </select>
+      </div>
     </div>
   );
 }

@@ -7,7 +7,7 @@ const Sorting = () => {
     <div className='sorting'>
       <div className='param'>Distance</div>
       <div className='param'>Rating</div>
-      <div className='param'>Review Count</div>
+      <div className='param'>Reviews</div>
     </div>
   );
 }

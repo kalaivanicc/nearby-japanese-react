@@ -8,12 +8,14 @@
   box-sizing: border-box;
   max-width: 950px;
   margin: 0 auto;
+  flex-grow: 1;
 }
 .results-output {
-  margin: 0;
-  height: 60%;
-  width: 90%;
+  margin: 0 auto;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+
+  width: 80%;
 }
