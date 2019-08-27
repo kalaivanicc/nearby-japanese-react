@@ -5,12 +5,30 @@
   justify-content: space-around;
   align-items: center;
   box-sizing: border-box;
-  background: turquoise;
+  background: transparent;
   max-width: 950px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 .param {
+  border: white solid 1px;
+  width: 25%;
+  height: 90%;
+  margin: 0;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  background: black;
+  outline: none;
+}
+.param:hover{
   border: black solid 1px;
-  width: 100px;
-  margin: 5px;
+}
+.sort {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 20%;
+  text-align: center;
+  color: black;
+  padding: 5px;
 }

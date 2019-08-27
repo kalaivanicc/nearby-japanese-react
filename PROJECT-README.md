@@ -4,6 +4,9 @@
 
 A web app that displays nearby Japanese restaurants based on a radius input and the distance from the user’s current coordinates.
 
+- [Github repo](https://github.com/jadizzedin/sei-project2)
+- [Deployment]()
+
 ## Wireframes & Components:
 ![Wireframe](https://res.cloudinary.com/jadscloudinary/image/upload/v1566577886/sei-project2-wireframe_mxbo2f.jpg)
 

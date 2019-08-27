@@ -3,25 +3,14 @@ import axios from 'axios'
 let key = process.env.REACT_APP_Y_KEY
 
 //citation: https://medium.com/@chaoyue_zhao/how-to-make-axios-api-calls-with-yelp-fusion-inside-react-js-10755d8485c5
+//constant inputs
 let source = 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search';
-
-//locational
-let lat = '40.74014';
-let lon = '-73.9897728999999';
-let radius = '500';
-let limit = '50';
-//sorting
-let distance = 'distance';
-let match = 'best_match';
-let rating = 'rating';
-let review = 'review_count';
-//misc
+let limit = '6';
 let open = 'true'
 let category = 'japanese'
 
-
-const getData = async () => {
-  let response = await axios.get(`${source}?latitude=${lat}&longitude=${lon}&radius=${radius}&limit=${limit}&categories=${category}&sort_by=${distance}`, {
+const getData = async (lat,lon,radius,sort) => {
+  let response = await axios.get(`${source}?latitude=${lat}&longitude=${lon}&radius=${radius}&sort_by=${sort}&limit=${limit}&categories=${category}&open_now=${open}`, {
     headers:{
       Authorization: `Bearer ${key}`}
     });

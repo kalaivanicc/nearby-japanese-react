@@ -1,13 +1,22 @@
 import React from 'react';
 import './Sorting.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons'
 
-const Sorting = () => {
+const Sorting = (props) => {
 
   return (
     <div className='sorting'>
-      <div className='param'>Distance</div>
-      <div className='param'>Rating</div>
-      <div className='param'>Reviews</div>
+    <span className='sort'>Sort by <FontAwesomeIcon icon={faLongArrowAltRight}/></span>   
+      <button className='param'
+      onClick={() => props.setSort('distance')}
+      >Distance</button>
+      <button className='param'
+      onClick={() => props.setSort('rating')}
+      >Rating</button>
+      <button className='param'
+      onClick={() => props.setSort('review_count')}
+      >Reviews</button>
     </div>
   );
 }

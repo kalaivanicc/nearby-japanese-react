@@ -6,9 +6,11 @@ import './Header.css';
 const Header = () => {
 
   return (
-    <header>
-        <h1>TITLE</h1>
-    </header>
+    <nav>
+      <div className="nav-item"><Link to="/">Home</Link></div>
+      <img className='header-img' src={require('./../../assets/food.png')} alt='japanese food'/>
+      <div className="nav-item"><Link to="/search">Search</Link></div>
+    </nav>
   );
 }
 
