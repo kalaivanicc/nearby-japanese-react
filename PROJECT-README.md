@@ -22,14 +22,12 @@ Sample API Data:
 MVP
 1.	Grab the users location using Geolocation.getCurrentPosition() and collect radius input from user (doing pre-set radius options specific for NYC use)
 2. Search Yelp API for 6 restaurants that match the criteria. Default will be sorted by distance (low to high), but will have the option to look by rating or number of reviews
-3.	Display results below and allow click to display more info about each result within module
+3.	Display an image, restaurant name, rating, number of reviews and directions to the restaurant
 
 PostMVP
-1.	Use yelp's autocomplete API to allow the user to add categories(cuisine types to their search params)
-2.	Display the locations on a map
-3.	Allow the user to adjust the radius beyond 4 options with a slider (which would make the app applicable for other cities)
-4. Display additional info for each result
-5. Add animations & more styling to improve the UI
+1. Add functionality that allows each result to show more information on click + animation
+2. Display the locations on a map
+
 
 ## React Component Hierarchy
 
