@@ -3,7 +3,7 @@ import './Results.css'
 import Result from '../Result/Result'
 
 const Results = (props) => {
-  
+
   let results = props.data.map((d,i) => {
     return <Result key={i} data={d} api={props.api}/>
   })
