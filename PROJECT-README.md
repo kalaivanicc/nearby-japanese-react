@@ -19,13 +19,14 @@ Sample API Data:
 
 ## MVP / PostMVP
 
-MVP
+##### MVP
 1.	Grab the users location using Geolocation.getCurrentPosition() and collect radius input from user (doing pre-set radius options specific for NYC use)
 2. Search Yelp API for 6 restaurants that match the criteria. Default will be sorted by distance (low to high), but will have the option to look by rating or number of reviews
 3.	Display an image, restaurant name, rating, number of reviews and directions to the restaurant
 
-PostMVP
-1. Add functionality that allows each result to show more information on click + animation
+##### PostMVP
+1. Show directions from current location to each result destination
+2. Add functionality that allows each result to show more information on click + animation
 2. Display the locations on a map
 
 

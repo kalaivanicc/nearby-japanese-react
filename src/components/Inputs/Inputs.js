@@ -1,5 +1,6 @@
 import React from 'react';
 import './Inputs.css'
+import { Link } from 'react-router-dom';
 
 const Inputs = (props) => {
 
@@ -11,9 +12,16 @@ const Inputs = (props) => {
 
   return (
     <div className='inputs'>
-      <button className='coords'
-        onClick={() => props.getCoords}>
-        Reset Coordinates</button>
+
+    <div className='view-buttons'>
+      <Link to='/search/map'>
+        <button className='coords'>View Map</button>
+      </Link>
+      <Link to='/search'>
+        <button className='coords'>View List</button>
+      </Link>
+    </div>
+
       <div className='select-container'>
       <span className='set-distance'>Set Distance:</span>
         <select
