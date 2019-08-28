@@ -24,6 +24,7 @@
 button:hover {
   background: white;
   color: black;
+  cursor: pointer;
 }
 .set-distance {
   padding-right: 10px;
@@ -35,5 +36,5 @@ button:hover {
 
 }
 select {
-  
+
 }

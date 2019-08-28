@@ -44,7 +44,7 @@ const Result = (props) => {
     let url = `${source}${currentCoords}&destination=${destLat},${destLon}`
     return url
   }
-  
+
   return (
     <div className='result'
       style={{backgroundImage: `url(${props.data.image_url})`}}>
