@@ -5,12 +5,16 @@ import ReactMapGL, { Marker, Popup, GeolocateControl, NavigationControl }  from 
 
 const Map = (props) => {
 
-  const [viewport, setViewport] = React.useState({
+  const [viewport, setViewport] = useState({
     width: 450,
     height: 400,
     latitude: 40.7401285,
     longitude: -73.9898506,
-    zoom: 14.5
+    zoom: 14
+  })
+
+  const [showPopup, setShowPopup] = useState({
+    showPopup: true
   })
 
   console.log(props.api.lat);
@@ -19,7 +23,7 @@ const Map = (props) => {
     return <Marker
     key={id}
     latitude={marker.coordinates.latitude}
-    longitude={marker.coordinates.longitude}><button></button>
+    longitude={marker.coordinates.longitude}><button className='marker'></button>
     </Marker>
   })
 

@@ -56,7 +56,14 @@ span {
   color: white;
   background: black;
   border: none;
-  height: 100%;
   border: 1px solid white;
   outline: none;
+}
+.yelp-link {
+  font-size: .75em;
+  color: orange;
+}
+.yelp-link:hover {
+  text-decoration: none;
+  color: white;
 }
