@@ -23,3 +23,7 @@
   margin: 50px;
   border: 2px solid black;
 }
+.marker {
+  background-color: blue;
+  border: solid black 1px;
+}

@@ -54,13 +54,19 @@ const Result = (props) => {
           {getRating(props.data.rating)}
         </div>
         <span className='reviews'>
-        {props.data.review_count} Reviews </span>
+        {props.data.review_count} Reviews</span>
         <span className='distance'>
-        {metersAway(props.data.distance)} Meters Away </span>
-        <a target="_blank" href={directionsUrl()}>
-          <button className='directions'
-          >Directions</button>
-        </a>
+        {metersAway(props.data.distance)} Meters Away</span>
+        <div className='result-links'>
+          <a target="_blank" href={directionsUrl()}>
+            <span className='yelp-link'
+            >View Yelp Profile</span>
+          </a>
+          <a target="_blank" href={directionsUrl()}>
+            <button className='directions'
+            >Directions</button>
+          </a>
+        </div>
       </div>
     </div>
   );
