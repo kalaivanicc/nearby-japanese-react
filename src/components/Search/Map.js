@@ -36,6 +36,7 @@ const Map = (props) => {
     longitude={marker.coordinates.longitude}>
     <img className='button-svg'
     src={require('./../../assets/sushi.svg')}
+    alt={'cartoon sushi'}
     onClick={(e) => {
       setSelected({
         latitude: marker.coordinates.latitude,
