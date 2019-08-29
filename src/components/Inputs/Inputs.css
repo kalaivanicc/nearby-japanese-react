@@ -10,7 +10,7 @@
   max-width: 950px;
   margin: 0 auto;
 }
-.coords {
+.buttons {
   height: 20px;
   font-family: 'Livvic', sans-serif;
   outline: none;
@@ -37,4 +37,9 @@ select {
   color: white;
   outline: none;
   border: none;
+}
+@media(max-width: 600px){
+  .map-button {
+    display: none;
+  }
 }

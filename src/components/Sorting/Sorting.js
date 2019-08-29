@@ -7,7 +7,7 @@ const Sorting = (props) => {
 
   return (
     <div className='sorting'>
-    <span className='sort'>Sort by <FontAwesomeIcon icon={faLongArrowAltRight}/></span>   
+    <span className='sort'>Sort by <FontAwesomeIcon className='arrow' icon={faLongArrowAltRight}/></span>   
       <button className='param'
       onClick={() => props.setSort('distance')}
       >Distance</button>

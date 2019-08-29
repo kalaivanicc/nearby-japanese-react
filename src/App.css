@@ -26,6 +26,6 @@ body {
   align-items: center;
   justify-content: space-between;
   font-family: 'Livvic', sans-serif;
-  border: black solid 10px;
+  border-top: black solid 10px;
   background: white;
 }
