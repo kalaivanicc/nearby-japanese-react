@@ -19,12 +19,13 @@ class App extends React.Component {
     }
   }
 
-  setDistance = (value) => {
-    this.setState(prevState => ({
-        apiInputs: {
-          ...prevState.apiInputs,
-          dist: value
-        }}))
+  setDistance = async (value) => {
+    await this.setState(prevState => ({
+      apiInputs: {
+        ...prevState.apiInputs,
+        dist: value.toString()
+      }
+    }))
     this.getData();
   }
 

@@ -25,7 +25,8 @@ const Inputs = (props) => {
       <div className='select-container'>
       <span className='set-distance'>Set Distance:</span>
         <select
-        defaultValue={radii[1]} onChange={() => handleSelect}>
+        defaultValue={radii[1]}
+        onChange={handleSelect}>
           {radii.map((radius, i) => (
             <option key={i} value={radius}>
             {radius}m</option>
