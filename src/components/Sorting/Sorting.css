@@ -32,3 +32,8 @@
   color: black;
   padding: 5px;
 }
+@media(max-width: 450px){
+  .arrow {
+    display: none;
+  }
+}

@@ -15,10 +15,10 @@ const Inputs = (props) => {
 
     <div className='view-buttons'>
       <Link to='/search/map'>
-        <button className='coords'>View Map</button>
+        <button className='buttons map-button'>View Map</button>
       </Link>
       <Link to='/search'>
-        <button className='coords'>View List</button>
+        <button className='buttons list-button'>View List</button>
       </Link>
     </div>
 
