@@ -46,11 +46,21 @@
   display: flex;
   justify-content: center;
 }
-
 span {
   color: white;
 }
-
+.links-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.result-link{
+  padding: 0;
+}
+.result-link:hover {
+  text-decoration: none;
+}
 .directions {
   border-radius: 5px;
   color: white;
@@ -60,8 +70,9 @@ span {
   outline: none;
 }
 .yelp-link {
-  font-size: .75em;
+  font-size: .7em;
   color: orange;
+  text-decoration: none;
 }
 .yelp-link:hover {
   text-decoration: none;
