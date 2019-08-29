@@ -6,7 +6,9 @@ const Loading = () => {
 
   return (
     <main className='home'>
-      <div className='loading'>
+      <div className='loading-container'>
+        <div className='loading'>
+        </div>
       </div>
     </main>
   );
