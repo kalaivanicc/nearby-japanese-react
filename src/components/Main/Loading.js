@@ -6,6 +6,8 @@ const Loading = () => {
 
   return (
     <main className='home'>
+      <div className='loading'>
+      </div>
     </main>
   );
 }
