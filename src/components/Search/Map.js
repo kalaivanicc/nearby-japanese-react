@@ -17,14 +17,41 @@ const Map = (props) => {
     showPopup: true
   })
 
-  console.log(props.api.lat);
+  const [selected, setSelected] = useState({
+    latitude: null,
+    longitude: null,
+    showPopup: null
+  })
 
   let markers = props.data.map((marker,id) => {
     return <Marker
     key={id}
     latitude={marker.coordinates.latitude}
-    longitude={marker.coordinates.longitude}><button className='marker'></button>
+    longitude={marker.coordinates.longitude}>
+    <button className='marker'
+    onClick={(e) => {
+      e.preventDefault();
+      setSelected({
+        latitude: marker.coordinates.latitude,
+        longitude: marker.coordinates.longitude,
+        showPopup: true
+      })
+    }}></button>
     </Marker>
+  })
+
+  let popups = props.data.map((popup,id) => {
+    return selected.showPopup &&
+      <Popup
+        key={id}
+        latitude={selected.latitude}
+        longitude={selected.longitude}
+        closeButton={true}
+        closeOnClick={false}
+        onClose={() => setShowPopup({showPopup: false})}
+        anchor="top">
+        <h5>SUP</h5>
+      </Popup>
   })
 
   return (
@@ -35,12 +62,15 @@ const Map = (props) => {
           {...viewport}
           onViewportChange={(viewport) => {
             setViewport(viewport) }}
-          >
+        >
+
           {markers}
+          {popups}
         </ReactMapGL>
       </div>
     </div>
   );
 }
+
 
 export default Map;

@@ -32,9 +32,9 @@ button:hover {
   white-space: nowrap;
   color: black;
 }
-.select-container{
-
-}
 select {
-
+  background-color: black;
+  color: white;
+  outline: none;
+  border: none;
 }
