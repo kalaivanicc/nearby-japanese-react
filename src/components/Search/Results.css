@@ -24,6 +24,41 @@
   border: 2px solid black;
 }
 .marker {
-  background-color: blue;
+  background-color: white;
   border: solid black 1px;
+}
+.marker:hover {
+  background: black;
+}
+.popup {
+  background: transparent;
+}
+.button-svg {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.sorry {
+  display: none;
+}
+.sorry-container {
+  display: none;
+}
+
+@media(max-width: 600px){
+  .map {
+    display: none;
+  }
+  .results {
+    justify-content: flex-start;
+    text-align: center;
+  }
+  .sorry {
+    display: flex;
+    margin: 10px 50px;
+  }
+  .sorry-container {
+    display: flex;
+    height: 70vh;
+  }
 }

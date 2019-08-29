@@ -24,8 +24,7 @@ const Map = (props) => {
   const handleGeolocation = (newViewport) => {
     setSelected({
       latitude: newViewport.latitude,
-      longitude: newViewport.longitude,
-      showPopup: true
+      longitude: newViewport.longitude
     });
     setViewport(newViewport)
   }
@@ -41,7 +40,7 @@ const Map = (props) => {
       setSelected({
         latitude: marker.coordinates.latitude,
         longitude: marker.coordinates.longitude,
-        showPopup: true,
+        showPopup: true
       })
       }}
     />
