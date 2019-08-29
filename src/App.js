@@ -66,8 +66,6 @@ class App extends React.Component {
 
   render() {
 
-    console.log(this.state.apiInputs.lat, this.state.apiInputs.lon, this.state.apiInputs.dist, this.state.apiInputs.sort, this.state.yelpData);
-
     return (
       <div className="App">
       <Header />
