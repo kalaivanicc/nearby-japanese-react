@@ -5,7 +5,7 @@
 A web app that displays nearby Japanese restaurants based on a radius input and the distance from the user’s current coordinates.
 
 - [Github repo](https://github.com/jadizzedin/sei-project2)
-- [Deployment]()
+- [Deployment](https://nearbyjapanese.surge.sh)
 
 ## Wireframes & Components:
 ![Wireframe](https://res.cloudinary.com/jadscloudinary/image/upload/v1566577886/sei-project2-wireframe_mxbo2f.jpg)
@@ -26,7 +26,6 @@ Sample API Data:
 
 ##### PostMVP
 1. Show directions from current location to each result destination
-2. Add functionality that allows each result to show more information on click + animation
 2. Display the locations on a map
 
 
@@ -34,7 +33,7 @@ Sample API Data:
 
 ##### Drawn in wireframes image.
 
-App => {Header, Main => {Inputs, Sort, Results => {Result}}, Footer}
+App => {Header, Home || Loading || Search => {Inputs, Sort, Results || Map => {Result}}, Footer}
 
 ## Components
 
@@ -42,45 +41,32 @@ App => {Header, Main => {Inputs, Sort, Results => {Result}}, Footer}
 | --- | :---: |  
 | App | Includes initial data pull and include React Router|
 | Header | Includes a logo/icon, title(h1), and mini blurb |
-| Main | Includes inputs, sort, and results |
+| Search | Includes inputs, sort, and results |
+| Loading | Page that displays when the API is being called |
+| Home | Lading page with an explanation of the app's uses |
 | Inputs | Coordinates and radius |
 | Sort | 3 ways to sort the data: distance, rating, number of reviews |
 | Results | All of the results that render |
 | Result | One result and its info |
 | Footer | Includes credits and other secondary links |
-| Post MVP | Potential: map view and category input components |
+| Post MVP: Map |  Mapbox component that renders the results on within a map |
 
 
 ## Time Frames (time in hrs)
 
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: |
-| Base Layout and Component Structure | H | 2|  |  |
-| Working with API | H | 4  |
-| Main: Input & Sort Functionality | H | 6  |
-| Main: Results & Result Functionality | H | 8 |
-| Styling | M | 6  |
-| Route Functionality | H | 4 |
-| Total |  |  30 | |
-| Post MVP | L | 8+  |
+| Base Layout and Component Structure | H | 2|2|
+| Working with API | H | 4  | 2|
+| Main: Input & Sort Functionality | H | 6  |4 |
+| Main: Results & Result Functionality | H | 8 | 6|
+| Styling | M | 6  | 6|
+| Route Functionality | H | 4 |2|
+| Total |  |  30 |  22|
+| Post MVP | L | 8+  | 12
 
 
-## Additional Libraries (LATER)
- Axios
-
-## Code Snippet (LATER)
-
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code.
-
-```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
-```
-
-## Issues and Resolutions (LATER)
- Use this section to list of all major issues encountered and their resolution.
-
-#### SAMPLE.....
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
-**RESOLUTION**: Missing comma after first object in sources {} object
+## Additional Libraries
+ Axios,
+ FontAwesome,
+ Mapbox
