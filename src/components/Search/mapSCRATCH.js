@@ -1,8 +1,3 @@
-import React, { useState } from 'react';
-import './Results.css';
-import ReactMapGL, { Marker, Popup, GeolocateControl, NavigationControl }  from 'react-map-gl';
-
-
 const Map = (props) => {
 
   const [viewport, setViewport] = useState({
@@ -41,17 +36,17 @@ const Map = (props) => {
   })
 
   let popups = props.data.map((popup,id) => {
-    return selected.showPopup &&
+    return {selected.showPopup &&
       <Popup
         key={id}
-        latitude={selected.latitude}
-        longitude={selected.longitude}
+        latitude={popup.coordinates.latitude}
+        longitude={popup.coordinates.longitude}
         closeButton={true}
         closeOnClick={false}
         onClose={() => setShowPopup({showPopup: false})}
         anchor="top">
         <h5>SUP</h5>
-      </Popup>
+      </Popup>}
   })
 
   return (
@@ -71,6 +66,3 @@ const Map = (props) => {
     </div>
   );
 }
-
-
-export default Map;
