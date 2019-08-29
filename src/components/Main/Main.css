@@ -47,7 +47,6 @@ p {
 h1 {
   font-size: 150%;
   padding: 5px;
-<<<<<<< HEAD
 }
 .loading {
   height: 50vh;
@@ -55,6 +54,4 @@ h1 {
   background-image: url('https://media.giphy.com/media/3oKIPh11RrJRrjrAnC/source.gif');
   background-size: cover;
   background-position: center;
-=======
->>>>>>> 70b64e58c7697f6249f72b717924d8b691ee0c40
 }
