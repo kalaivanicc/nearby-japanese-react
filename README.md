@@ -70,3 +70,12 @@ App => {Header, Home || Loading || Search => {Inputs, Sort, Results || Map => {R
  Axios,
  FontAwesome,
  Mapbox
+
+## Not Completed
+
+1. At the last second, I wanted to add a browser icon for the tab, but I was unable to do it.
+2. I wasn't able to have the Mapbox load on the user's coordinates without clicking the geolocation icon. I could hardcode the viewports default coordinates but I couldn't set them to be the geolocation value collected in App's state and pass it down to be the state in the viewport's state (within the map component)
+
+## Biggest Issues
+
+1. Bar far my biggest issue was accidentally committing and pushing live my Mapbox api key. I needed quite a bit of help to remove the commit history that contained that info and de-push and re-deploy. That ended up being a giant pain.
